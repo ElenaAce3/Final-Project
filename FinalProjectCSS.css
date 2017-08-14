@@ -3,6 +3,11 @@ body{
   position: relative;
 }
 
+.text{
+  font-family: 'Bungee Shade', cursive;
+  font-size: 35px;
+}
+
 #section1 {
   padding-top:0px;
   height:500px;
@@ -45,6 +50,7 @@ h1{
   display: inline-block;
   margin: 5px;
   float: center;
+
 }
 
 .image {
