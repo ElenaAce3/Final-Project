@@ -26,7 +26,7 @@ body {
   padding-top:0px;
   height:500px;
   color: #fff;
-  background-color: #FEB3BA;
+  background-color: #9b1212;
   opacity: 40%;
   image-orientation: center
 }
@@ -38,14 +38,14 @@ body {
   padding-right: 20px;
   height: auto;
   color: #fff;
-  background-color: #FF8D5C;
+  background-color: #e06969;
 
 }
 
 h1 {
   color: white;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 100px;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 70px;
   text-align: center;
   vertical-align: middle;
   line-height: 400px;
