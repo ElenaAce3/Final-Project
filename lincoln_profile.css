@@ -38,7 +38,7 @@ body {
   padding-right: 20px;
   height: auto;
   color: #fff;
-  background-color: #e06969;
+  background-color: #000000;
 
 }
 
@@ -57,10 +57,10 @@ h1 {
   height: 200px;
   background:repeating-linear-gradient(
     45deg,
-    #FEB3BA,
-    #FEB3BA 10px,
-    #FF8D5C 10px,
-    #FF8D5C 20px
+    #9b1212,
+    #9b1212 10px,
+    #000000 10px,
+    #000000 20px
   );
   display: inline-block;
   margin: 22px;
@@ -79,7 +79,7 @@ h1 {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #FF7439;
+  background-color: #9b1212;
   overflow:auto;
   width: 100%;
   height: 0;
@@ -116,7 +116,7 @@ button{
   bottom: 415px;
   right: 10px;
   border: none;
-  background-color: #4CAF50; /* Green */
+  background-color: #c64949; /* light crimson */
   color: white;
   padding: 12px 15px;
   text-align: center;
