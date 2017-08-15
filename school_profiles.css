@@ -25,6 +25,7 @@ body {
   color: #fff;
   background-color: #1E88E5;
   opacity: 40%;
+  position: relative;
 }
 
 #section2 {
