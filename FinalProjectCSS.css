@@ -44,8 +44,14 @@ h1 {
   padding-top:40px;
   height:470px;
   color: #fff;
+<<<<<<< HEAD
   background-color: #a8daf4;
   opacity: 90%;
+=======
+  background-color: #FEB3BA;
+  /*#1E88E5;*/
+  opacity: 40%;
+>>>>>>> e1b1adb5322c4e1d1fba55ef465755f9f2081b0d
 }
 
 #section2 {
@@ -55,7 +61,7 @@ h1 {
   padding-right: 20px;
   height: auto;
   color: #fff;
-  background-color: #673ab7;
+  background-color: #FF8D5C;
 
 }
 
@@ -74,10 +80,10 @@ h1{
   height: 400px;
   background:repeating-linear-gradient(
     45deg,
-    #1E88E5,
-    #1E88E5 10px,
-    #673ab7 10px,
-    #673ab7 20px
+    #FEB3BA,
+    #FEB3BA 10px,
+    #FF8D5C 10px,
+    #FF8D5C 20px
   );
   display: inline-block;
   margin: 5px;
@@ -96,7 +102,7 @@ h1{
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: #FF7439;
   overflow:auto;
   width: 100%;
   height: 0;
