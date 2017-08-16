@@ -17,54 +17,58 @@ body{
 }
 
 .image {
-    margin-left: 32px;
+    margin-left: 64px;
+    margin-right: 0px;
     margin-top: 30px;
     margin-bottom: 10px;
     background-color: rgb(30, 136, 229);
-    float: left;
+    /*float: left;*/
     padding: 143px 140px 144px;
 }
 
 .name {
-    margin-right: 30px;
+    margin-right: 0px;
     margin-top: 30px;
+    margin-left: 10px;
     margin-bottom: 10px;
     background-color: rgb(30, 136, 229);
-    float: right;
+    /*float: left;*/
     padding: 10px;
 }
 
 .name-input {
     font-size: 32px;
-    width: 650px;
+    width: 563px;
     height: 40px;
 }
 
 .bio {
     margin-bottom: 10px;
-    margin-right: 30px;
+    margin-right: 0px;
     margin-left: 10px;
     background-color: rgb(30, 136, 229);
-    float: right;
+    /*float: right;*/
     padding: 10px;
+    clear: none;
 }
 
 .bio-input {
     font-size: 20px;
-    width: 650px;
-    height: 200px;
+    width: 563px;
+    height: 340px;
 }
 
 .contact {
-    margin-right: 30px;
+    margin-right: 0px;
+    margin-left: 10px;
     background-color: rgb(30, 136, 229);
-    float: right;
+    /*float: right;*/
     padding: 10px;
 }
 
 .contact-input {
     font-size: 20px;
-    width: 650px;
+    width: 563px;
     height: 100px;
 }
 
@@ -73,12 +77,13 @@ textarea {
 }
 
 .meetings {
-    margin-left: 30px;
-    margin-right: 10px;
+    margin-left: 64px;
+    margin-right: 0px;
     margin-bottom: 10px;
     background-color: rgb(30, 136, 229);
-    float: right;
+    /*float: left;*/
     padding: 10px;
+    clear: left;
 }
 
 .meetings-input {
@@ -88,11 +93,12 @@ textarea {
 }
 
 .events {
-    margin-left: 32px;
-    margin-right: 10px;
+    margin-left: 64px;
+    margin-right: 0px;
     margin-bottom: 10px;
+    margin-top: 10px;
     background-color: rgb(30, 136, 229);
-    float: left;
+    /*float: left;*/
     padding: 10px;
 }
 
@@ -110,4 +116,48 @@ textarea {
     height: auto;
     color: rgb(255, 255, 255);
     background-color: rgb(30, 136, 229);
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 100px;
+}
+
+/*.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: rgb(103, 58, 183);
+  display: inline-block;
+  margin: 5px;
+  float: center;
+}*/
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: visible;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.side1{
+  background-color: red;
+  padding: 5px;
+  padding-right: 0px;
+  width: 580px;
+  float: left;
+  background-color: rgb(103, 58, 183);
+}
+
+.side2{
+  background-color: green;
+  padding: 5px;
+  width: 600px;
+  float: left;
+  background-color: rgb(103, 58, 183);
 }
