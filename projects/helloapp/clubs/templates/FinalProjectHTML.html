@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link href="FinalProjectCSS.css" rel="stylesheet"> -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/FinalProjectCSS.css' %}">
+    <link href="FinalProjectJS.js" rel="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Source+Sans+Pro:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Bungee+Shade|Faster+One|Monoton|Nixie+One|Sacramento" rel="stylesheet">
+    <title>School Clubs</title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id = "tabs" class = "container-fluid">
+      <a href = "FinalProjectHTML.html">HOME</a>
+    </div>
+    <div id="section1" class="container-fluid">
+    <div class="treesimage">
+      {% load static %}
+      <img src="{% static "greentrees.png" %}" alt="Trees"/>
+        <!-- <img src="greentrees.png" alt="Green Trees" /> -->
+    </div>
+      <h1><center><span>Pick Your School</span></center></h1>
+      <p>...and find what clubs it has!</p>
+    </div>
+      <div id="section2" class="container-fluid">
+        <a href="garfield_clubs.html">
+          <div class="container", "col-1">
+            <div class="overlay">
+              <div class="text">Garfield High School</div>
+            </div>
+          </div>
+        </a>
+        <a href="lincoln_clubs.html">
+          <div class="container", "col-2">
+            <div class="overlay">
+              <div class="text">Lincoln High School</div>
+            </div>
+          </div>
+        </a>
+        <a href="bellevue_clubs.html">
+          <div class="container", "col-3">
+            <div class="overlay">
+              <div class="text">Bellevue High School</div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    <!-- </div>
+    <div id="section3" class="container-fluid">
+    </div> -->
+  </body>
+</html>
