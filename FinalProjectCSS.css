@@ -5,6 +5,7 @@ body{
 .text{
   font-family: 'Bungee Shade', cursive;
   font-size: 100px;
+<<<<<<< HEAD
 }
 
 #tabs {
@@ -51,6 +52,8 @@ h1 {
    height: 50%;
    left: 0px;
    up: 0px;
+=======
+>>>>>>> something
 }
 
 #section1 {
