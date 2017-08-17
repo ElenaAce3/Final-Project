@@ -11,7 +11,7 @@ body {
 #tabs {
   padding-top: 0px;
   padding-left: 30px;
-  height: 55px;
+  height: 70px;
   color: white;
   background-color: #28367a;
   font-size: 40px;
@@ -113,7 +113,7 @@ h1 {
 button{
   position: relative;
   float: right;
-  bottom: 415px;
+  bottom: 490px;
   right: 10px;
   border: none;
   background-color: #c9930a; /* Gold */
