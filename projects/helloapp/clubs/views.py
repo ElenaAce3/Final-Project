@@ -1,22 +1,30 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from .models import School
+from .models import Club
+
+# def school_list(request):
+#     schools= School.objects
+#     #Club.objects.order_by('created_date')
+#     return render(request, 'clubs/FinalProjectHTML.html', {'schools': schools})
+
 # Create your views here.
 class HomePageView(TemplateView):
     def get(self, request, **kwargs):
-        return render(request, 'FinalProjectHTML.html', context=None)
-# class HomePageView(TemplateView):
-#     template_name = "FinalProjectHTML_copy.html"
-class GarfieldPageView(TemplateView):
-    template_name = "garfield_clubs.html"
+        schools = School.objects.filter()
+        return render(request,'FinalProjectHTML.html', {'schools': schools})
 
+class SchoolPageView(TemplateView):
+    def get(self, request, **kwargs):
+        school_nm = request.GET["school"]
+        school = School.objects.filter(school_name=school_nm).first()
+        return render(request,'school_display.html', {'school': school})
+
+#
 class BackPageView(TemplateView):
-    template_name = "FinalProjectHTML.html"
-
-class LincolnPageView(TemplateView):
-    template_name = "lincoln_clubs.html"
-
-class BellevuePageView(TemplateView):
-    template_name = "bellevue_clubs.html"
-
-class CreatePageView(TemplateView):
-    template_name = "create_club.html"
+    def get(self, request, **kwargs):
+        schools = School.objects.filter()
+        return render(request,'FinalProjectHTML.html', {'schools': schools})
+#
+# class CreatePageView(TemplateView):
+#     template_name = "create_club.html"
