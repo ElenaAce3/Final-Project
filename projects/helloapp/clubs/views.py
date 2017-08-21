@@ -16,9 +16,10 @@ class HomePageView(TemplateView):
 
 class SchoolPageView(TemplateView):
     def get(self, request, **kwargs):
+        clubs = Club.objects.filter()
         school_nm = request.GET["school"]
         school = School.objects.filter(school_name=school_nm).first()
-        return render(request,'school_display.html', {'school': school})
+        return render(request,'school_display.html', {'school': school, 'clubs': clubs})
 
 #
 class BackPageView(TemplateView):
@@ -26,5 +27,5 @@ class BackPageView(TemplateView):
         schools = School.objects.filter()
         return render(request,'FinalProjectHTML.html', {'schools': schools})
 #
-# class CreatePageView(TemplateView):
-#     template_name = "create_club.html"
+class CreatePageView(TemplateView):
+    template_name = "create_club.html"

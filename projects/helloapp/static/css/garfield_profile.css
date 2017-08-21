@@ -13,7 +13,7 @@ body {
   padding-left: 30px;
   height: 70px;
   color: white;
-  background-color: #984cc4;
+  background-color: #9dd8ea;
   font-size: 40px;
   font-family: 'Bungee Shade', cursive;
 
@@ -91,7 +91,6 @@ h1 {
 }
 
 .text {
-  white-space: nowrap;
   color: white;
   font-size: 20px;
   position: absolute;
@@ -100,8 +99,9 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-
-  /*word-break: break-all;*/
+  width: 180px;
+  word-wrap: break-word;
+  text-align: center;
 }
 
 [class*="col-"] {
