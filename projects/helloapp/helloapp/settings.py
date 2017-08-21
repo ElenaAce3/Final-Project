@@ -88,8 +88,9 @@ DATABASES = {
         'PASSWORD': 'findclubs@skool',
         'HOST': 'schoolclubs.mysql.pythonanywhere-services.com',
         'TEST': {
-          NAME: 'schoolclubs$test_schoolclubs$default',
-
+          'NAME': 'schoolclubs$test_schoolclubs$default',
+          }
+    }
 }
 
 
