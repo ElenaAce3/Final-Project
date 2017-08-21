@@ -25,7 +25,9 @@ SECRET_KEY = 'eknqm-gf9k=2zrksh$c&bpg&9cpm5(_m+zxp3_a(@)8@h4o9=e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'schoolclubs.pythonanywhere.com'
+]
 
 
 # Application definition
