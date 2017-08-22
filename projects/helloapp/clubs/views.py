@@ -32,7 +32,7 @@ class CreatePageView(TemplateView):
 
 class ClubPageView(TemplateView):
     def get(self, request, **kwargs):
-        clubs = Club.objects.filter()
+        # clubs = Club.objects.filter()
         club_nm = request.GET["club"]
-        club = Club.objects.filter(club_name=club_nm).first()
-        return render(request,'view_club.html', {'club': clubs})
+        # club = Club.objects.filter(club_name=club_nm).first()
+        return render(request,'view_club.html', club_nm)
