@@ -27,14 +27,18 @@
       <div id="section2" class="container-fluid">
         {% for club in clubs %}
           {% if club.club_school == school %}
-            <div class="container", "col-1">
-              <div class="overlay">
-                <div class="text">{{ club.club_name }}</div>
+            <a href="view_club.html?club={{ club.club_name }}">
+              <div class="container", "col-1">
+                <div class="overlay">
+                  <div class="text">{{ club.club_name }}</div>
+                </div>
               </div>
-            </div>
+            </a>
           {% endif %}
         {% endfor %}
       </div>
+
+
 
 
 
