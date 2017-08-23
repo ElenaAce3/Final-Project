@@ -1,5 +1,4 @@
-
-body{
+body {
   background-color: #9dd8ea;
 }
 
@@ -8,6 +7,32 @@ body{
   background-color: #1E88E5;
   float: right;
 }*/
+
+h1 {
+  padding-top: 0px;
+  padding-left: 30px;
+  height: 70px;
+  color: white;
+  background-color: #9dd8ea;
+  font-size: 40px;
+  font-family: 'Bungee Shade', cursive;
+  text-align: center;
+}
+
+.post-form {
+  font-family: 'Nixie One', cursive;
+  margin-left: 400px;
+}
+
+/*#tabs {
+  padding-top: 0px;
+  padding-left: 30px;
+  height: 70px;
+  color: lightblue;
+  background-color: #9dd8ea;
+  font-size: 40px;
+  font-family: 'Bungee Shade', cursive;
+*/
 
 #section1 {
     padding-top: 0px;

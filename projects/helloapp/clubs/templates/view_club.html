@@ -1,25 +1,26 @@
 <!DOCTYPE html>
   <html>
     <head>
-      {% load static %}
-      <link href="{% static 'css/view_club.css' %}" rel="stylesheet">
+
       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
       <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
       <!-- <meta charset="utf-8"> -->
       <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Source+Sans+Pro:700" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Bad+Script|Bungee+Shade|Faster+One|Monoton|Nixie+One|Sacramento" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline" rel="stylesheet">
+      {% load static %}
+      <link href="{% static 'css/view_club.css' %}" rel="stylesheet">
       <title>{{ club.club_name }}</title>
     </head>
     <body>
       <div id = "tabs2" class = "container-fluid">
-        <a href = "school_display.html?school={{club.club_school}}">SCHOOL</a>
+        <a href ="school_display.html?school={{club.club_school}}">{{club.club_school}}</a>
       </div>
-      <div>
+      <!-- <div>
         <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-      </div>
+      </div> -->
       <div id="section1" class="container-fluid">
         <div class="side1">
           <div class="image">

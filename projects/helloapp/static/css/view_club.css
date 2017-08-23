@@ -1,4 +1,3 @@
-
 body{
   background-color: #9dd8ea;
 }
@@ -14,20 +13,21 @@ body{
 
 }
 
-#tabs2:hover {
-  color: lightblue;
+
+/*#tabs2:hover {
+  color: white;
 }
 
 #tabs2:active {
   color: lightblue;
-}
+}*/
 
 
 h1 {
-  color: white;font-family: 'Bungee Shade', cursive;  font-size: 40px;
+  color: white;font-family: 'Bungee Shade', cursive;  font-size: 35px;
   /*text-align: center;
   vertical-align: middle;*/
-  line-height: 0px;
+  line-height: 40px;
 }
 
 h2 {
@@ -37,7 +37,7 @@ h2 {
 p{
   color: white;
   font-family: 'Nixie One', cursive;
-  font-size: 20px;
+  font-size: 16px;
   /*text-align: center;*/
   /*vertical-align: middle;*/
   line-height: 25px;
@@ -91,7 +91,7 @@ p{
 .name-input {
     font-size: 32px;
     width: 563px;
-    height: 20px;
+    height: 30px;
 }
 
 .bio {
@@ -110,7 +110,7 @@ p{
 .bio-input {
     font-size: 20px;
     width: 563px;
-    height: 272px;
+    height: 292px;
 }
 
 .contact {
