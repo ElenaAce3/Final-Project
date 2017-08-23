@@ -21,7 +21,9 @@
         <!-- <h1><center>Garfield High School</center></h1> -->
         <h1><center>{{ school.school_name }} <!--If the school name in the URL (what you clicked on) is the same as the school name, display school name--></center></h1>
         <div>
-          <a href="create_club.html"><button type:"button">create club</button></a>
+          <a href="{% url 'post_new' %}" class="top-menu"><button type:"button">create club</button></a>
+          <!-- <a href="create_club.html"><button type:"button">create club</button></a> -->
+          <!-- <span class="glyphicon glyphicon-plus"></span> -->
         </div>
       </div>
       <div id="section2" class="container-fluid">

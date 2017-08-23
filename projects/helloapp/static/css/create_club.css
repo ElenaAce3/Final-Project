@@ -24,6 +24,14 @@ body{
     background-color: #FF8D5C;
     /*float: left;*/
     padding: 143px 140px 144px;
+    background:repeating-linear-gradient(
+      45deg,
+      #9dd8ea,
+      #9dd8ea 10px,
+      #FF8D5C 10px,
+      #FF8D5C 20px
+    );
+    );
 }
 
 .name {

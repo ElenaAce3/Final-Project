@@ -10,40 +10,60 @@
     <title>Create Club Profile</title>
   </head>
   <body>
+    <!-- {% block content %} -->
   <div id="section1" class="container-fluid">
+    <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Save</button>
+        </form>
+
+
+
+
+
+
     <div class="side1">
       <div class="image">
-        <form action"="" action_page.php"="">
-          <input type="file" name="image-input" accept="image/x-png, image/jpeg">
-        </form>
+        <!-- <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+          <textarea name="text" placeholder="MEETINGS" class="meetings-input"></textarea>
+        </form> -->
       </div>
       <div class="meetings">
-        <form action"="" action_page.php"="">
+        <!-- <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
           <textarea name="text" placeholder="MEETINGS" class="meetings-input"></textarea>
-        </form>
+        </form> -->
       </div>
       <div class="events">
-        <form action"="" action_page.php"="">
-          <textarea name="text" placeholder="EVENTS" class="events-input"></textarea>
-        </form>
+        <!-- <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+          <textarea name="text" placeholder="MEETINGS" class="meetings-input"></textarea>
+        </form> -->
       </div>
     </div>
     <div class="side2">
       <div class="name">
-        <form action="/action_page.php">
-          <input type="text" placeholder="CLUB NAME" class="name-input">
-        </form>
+        <!-- <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+          <textarea name="text" placeholder="MEETINGS" class="meetings-input"></textarea>
+        </form> -->
       </div>
       <div class="bio">
-        <form action"="" action_page.php"="">
-          <textarea name="text" placeholder="DESCRIPTION" class="bio-input"></textarea>
-        </form>
+        <!-- <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+          <textarea name="text" placeholder="MEETINGS" class="meetings-input"></textarea>
+        </form> -->
       </div>
       <div class="contact">
-        <form action"="" action_page.php"="">
-          <textarea name="text" placeholder="CONTACT" class="contact-input"></textarea>
-        </form>
+        <!-- <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+          <textarea name="text" placeholder="MEETINGS" class="meetings-input"></textarea>
+        </form> -->
       </div>
+      <!-- <button type="submit" class="save btn btn-default">Submit</button>
+    </form> -->
+    <!-- {% endblock %} -->
     </div>
   </div>
   <!-- <div id="section2" class="container-fluid">

@@ -1,37 +1,60 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <link href="view_club.css" rel="stylesheet">
       {% load static %}
-      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+      <link href="{% static 'css/view_club.css' %}" rel="stylesheet">
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+      <!-- <meta charset="utf-8"> -->
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+      <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Source+Sans+Pro:700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Bad+Script|Bungee+Shade|Faster+One|Monoton|Nixie+One|Sacramento" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline" rel="stylesheet">
       <title>{{ club.club_name }}</title>
     </head>
     <body>
+      <div id = "tabs2" class = "container-fluid">
+        <a href = "school_display.html?school={{club.club_school}}">SCHOOL</a>
+      </div>
+      <div>
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+      </div>
       <div id="section1" class="container-fluid">
         <div class="side1">
           <div class="image">
             <!-- how do i display an image lol -->
           </div>
           <div class="meetings">
-            <!-- this is where the meetings info box went -->
+            <div class="meetings-input">
+              <h2><b>MEETINGS</b></h2>
+              <p>{{ club.club_meeting }}</p>
+            </div>
           </div>
           <div class="events">
-            <!-- club events -->
+            <div class="events-input">
+              <h2><b>EVENTS</b></h2>
+              <p>{{ club.club_event }}</p>
+            </div>
           </div>
           </div>
         <div class="side2">
           <div class="name">
-            <h1>{{ club.club_name }}</h1>
+            <div class="name-input">
+              <h1><b>{{ club.club_name }}</b></h1>
+            </div>
           </div>
           <div class="bio">
-            <!-- bio -->
+            <div class="bio-input">
+              <h2><b>DESCRIPTION</b></h2>
+              <p>{{ club.club_bio }}</p>
+            </div>
           </div>
           <div class="contact">
-            <!-- contact info -->
+            <div class="contact-input">
+              <h2><b>CONTACT</b></h2>
+              <p>{{ club.club_contact }}</p>
+            </div>
           </div>
         </div>
       </div>

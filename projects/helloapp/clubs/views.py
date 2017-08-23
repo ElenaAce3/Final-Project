@@ -2,6 +2,10 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from .models import School
 from .models import Club
+# from django.http import HttpResponseRedirect
+from django.shortcuts import redirect
+from .forms import ClubForm
+
 
 # def school_list(request):
 #     schools= School.objects
@@ -20,7 +24,6 @@ class SchoolPageView(TemplateView):
         school_nm = request.GET["school"]
         school = School.objects.filter(school_name=school_nm).first()
         return render(request,'school_display.html', {'school': school, 'clubs': clubs})
-
 #
 class BackPageView(TemplateView):
     def get(self, request, **kwargs):
@@ -32,7 +35,19 @@ class CreatePageView(TemplateView):
 
 class ClubPageView(TemplateView):
     def get(self, request, **kwargs):
-        clubs = Club.objects.filter()
+        #clubs = Club.objects.filter()
         club_nm = request.GET["club"]
         club = Club.objects.filter(club_name=club_nm).first()
-        return render(request,'view_club.html', {'clubs': clubs})
+        return render(request,'view_club.html', {'club': club})
+
+#all of this is probably wrong
+def post_new(request):
+    if request.method == "POST":
+        form = ClubForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = ClubForm()
+    return render(request, 'create_club.html', {'form': form})

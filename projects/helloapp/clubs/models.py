@@ -6,6 +6,8 @@ class School(models.Model):
     school_code = models.CharField(max_length=6)
     #id is written for us
     pass #the CLUB POINTS TO THE School
+    def __str__(self):
+        return (self.school_name)
 
 #many to one relationship
 class Club(models.Model):
@@ -18,3 +20,5 @@ class Club(models.Model):
     #club_image = models.ImageField(upload_to=None, height_field=None, width_field=None, max_length=100)
     club_school = models.ForeignKey(School, on_delete=models.CASCADE)
     #id written for us
+    def __str__(self):
+        return (self.club_name)

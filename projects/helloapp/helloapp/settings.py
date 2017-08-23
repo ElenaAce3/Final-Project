@@ -26,6 +26,7 @@ SECRET_KEY = 'eknqm-gf9k=2zrksh$c&bpg&9cpm5(_m+zxp3_a(@)8@h4o9=e'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+'127.0.0.1',
     'schoolclubs.pythonanywhere.com'
 ]
 
