@@ -11,7 +11,7 @@ urlpatterns = [
     url(r'^school_display.html$', views.SchoolPageView.as_view()),
     url(r'^create_club.html$', views.CreatePageView.as_view()), # Add this /create_club/ route
     url(r'^view_club.html$', views.ClubPageView.as_view()),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    url(r'^post/new/school_display.html$', views.post_new, name='post_new'),
     ]
 # Add this /garfield_club/ route
 #     url(r'^lincoln_clubs.html$', views.LincolnPageView.as_view()), # Add this /lincoln_clubs/ route

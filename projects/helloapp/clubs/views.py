@@ -47,7 +47,7 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.save()
-            return redirect('post_detail', pk=post.pk)
+            return redirect('school_display.html', pk=post.pk)
     else:
         form = ClubForm()
     return render(request, 'create_club.html', {'form': form})
